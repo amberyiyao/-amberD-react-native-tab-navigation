@@ -1,7 +1,7 @@
 {
-  "name": "amber-design-react-native-tab-navigation",
-  "version": "1.0.0",
-  "description": "This is a tab navigation for react native.",
+  "name": "@wezyy1/rn-animated-tab-nav",
+  "version": "1.0.8",
+  "description": "A cross-platform Tab Navigation component for React Native.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/amberyiyao/-amberD-react-native-tab-navigation.git"
   },
-  "author": "Yiyao Zhou",
+  "author": "wezyy1",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amberyiyao/-amberD-react-native-tab-navigation/issues"
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/amberyiyao/-amberD-react-native-tab-navigation#readme",
   "dependencies": {
     "react-native-elements": "^2.0.0"
-  }
+  },
+  "keywords":["react-native-component", "react-native", "ios", "android", "tab", "navigation", "react-native-naviagetion", "tab-navigation"]
 }

@@ -7,6 +7,7 @@ export default class TabBar extends React.Component{
     static defaultProps = {
         tabStyle: {},
         itemStyle:{},
+        currentPageIndex:0
     }
 
     constructor(props){
@@ -23,14 +24,14 @@ export default class TabBar extends React.Component{
         }
     }
 
-    handleTabPress = (id) => {
-        this.props.handlePressTab(id)
+    handleTabPress = (index) => {
+        this.props.handlePressTab(index)
     }
 
     UNSAFE_componentWillReceiveProps(nextProps){
-        const tabInfo = this.state.tabInfo.map(item => {
+        const tabInfo = this.state.tabInfo.map((item,indx) => {
             let newItem = item
-            newItem.isActive = item.id == nextProps.currentPageIndex
+            newItem.isActive = indx == nextProps.currentPageIndex
             return newItem
         })
 
@@ -42,7 +43,7 @@ export default class TabBar extends React.Component{
     }
 
     render(){
-        const tabItemList = this.state.tabInfo.map(item => <TabBarItem itemStyle={this.props.itemStyle} onPress={this.handleTabPress} key={item.id} data={item}/>)
+        const tabItemList = this.state.tabInfo.map((item,index) => <TabBarItem index={index} itemStyle={this.props.itemStyle} onPress={this.handleTabPress} key={item.id} data={item}/>)
         return(
         <View style={{
             backgroundColor:'#fff',

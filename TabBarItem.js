@@ -16,7 +16,7 @@ export default class TabBarItem extends React.Component{
     }
 
     render(){
-        const{ data, onPress } = this.props
+        const{ data, onPress, index } = this.props
 
         const itemStyle = {
             alignItems:'center',
@@ -50,7 +50,7 @@ export default class TabBarItem extends React.Component{
         }
 
         return(
-            <TouchableOpacity onPress={()=>onPress(data.id)}>
+            <TouchableOpacity onPress={()=>onPress(index)}>
                 <Animated.View style={itemStyle}>
                     <Icon name={data.icon} color={data.isActive?data.color:'#aaa'} type='feather' size={20}/>
                     <Animated.Text numberOfLines={1} style={textStyle}>{data.label}</Animated.Text>
