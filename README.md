@@ -84,7 +84,7 @@ export default class App extends React.Component{
 
 ```
 
-[Try this example on Snack](https://snack.expo.io/@zhou0160/@wezyy1-rn-animated-tab-nav-1)
+[Try this example on Snack](https://snack.expo.io/0j0iJiY6I)
 
 ## Use Tab Navigation with Stack Navigation
 
@@ -176,7 +176,7 @@ export default class App extends React.Component{
 }
 
 ```
-[Try this example on Snack](https://snack.expo.io/@zhou0160/@wezyy1-rn-animated-tab-nav-2)
+[Try this example on Snack](https://snack.expo.io/ITJHGBjoI_)
 
 ## API
 
